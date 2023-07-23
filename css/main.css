@@ -1,0 +1,569 @@
+body {
+    overflow-x: hidden;
+}
+
+/* * {
+    outline: 1rem solid red;
+} */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+
+
+}
+
+
+.header .on .inner {
+    background: #fff;
+}
+
+
+.header a {
+    display: block;
+}
+
+.header .inner {
+
+    height: 110rem;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header .logo {
+
+    display: block;
+    width: 190rem;
+    height: 44rem;
+    background: url(../img/header_logo.png) no-repeat;
+
+}
+
+.header .gnb {
+
+
+    display: inline-block;
+}
+
+
+
+.header .gnb>ul {
+
+
+
+    font-family: 'GmarketSansMedium';
+    display: flex;
+    font-size: 18rem;
+    gap: 20rem;
+    color: #222;
+    padding-right: 36rem;
+
+}
+
+.header .gnb>ul>a {
+
+    font-size: 16rem;
+    white-space: nowrap;
+
+}
+
+.header .gnb .menu_txt {
+    color: #fff;
+}
+
+.header .gnb>ul>li {
+
+
+    position: relative;
+    white-space: nowrap;
+    word-break: keep-all;
+    margin-right: 5%;
+}
+
+
+
+
+
+
+/**/
+
+
+.main_visual {
+    position: relative;
+
+}
+
+.main_visual .main_slide .itm img {
+
+    height: 100vh;
+
+}
+
+.main_visual .main_slide .itm figure .slogan {
+    position: absolute;
+    top: 36%;
+    z-index: 999;
+    color: #fff;
+
+    line-height: 1.4;
+}
+
+
+.main_visual .main_slide .itm figure .slogan h2 {
+    font-size: 60rem;
+    padding-bottom: 9rem;
+}
+
+.main_visual .main_slide .itm figure .slogan span {
+    font-size: 27rem;
+}
+
+.main_visual .slick-dots {
+    position: absolute;
+    bottom: 50rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+}
+
+.main_visual .slick-dots>li {
+    display: inline-block;
+    padding: 5rem 0;
+    cursor: pointer;
+}
+
+.main_visual .slick-dots>li button {
+    position: relative;
+    width: 80rem;
+    height: 4rem;
+    background: #ddd;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0 2rem;
+
+    border: none;
+    outline: none;
+    font-size: 0;
+}
+
+.main_visual .slick-dots>li button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #999;
+
+}
+
+.main_visual .slick-dots>li.slick-active button::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.main_visual .arrows {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    max-width: 1700rem;
+    width: 100%;
+}
+
+.main_visual .arrows i {
+    padding: 25rem;
+
+    border-radius: 50%;
+    color: #fff;
+    font-size: 60rem;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main_visual .arrows .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.main_visual .arrows .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*sub_slide*/
+
+
+.sub_slide_section {
+    position: relative;
+    background: url(../img/main_t01_s02.jpg);
+
+}
+
+
+.sub_tit {
+    position: relative;
+
+    text-align: center;
+
+    bottom: 100rem;
+}
+
+
+
+.sub_slide_section .sub_visual .sub_tit h2 {
+    color: #fff;
+    font-size: 40rem;
+    font-weight: 500;
+    padding-bottom: 16rem;
+
+}
+
+.sub_slide_section .sub_visual .sub_tit span {
+    color: #fff;
+    font-size: 20rem;
+    font-weight: 300;
+}
+
+
+.sub_slide .slick-slide {}
+
+.sub_slide_section .sub_visual .sub_slide {
+
+    position: relative;
+    max-width: 1600rem;
+    margin: 0 auto;
+    bottom: 50rem;
+
+    width: 100%;
+    height: 700%;
+}
+
+
+
+.sub_slide_section .sub_visual .sub_slide .itm img {
+
+    position: relative;
+    padding: 0 20rem;
+    width: 200%;
+    height: 100%;
+
+
+}
+
+.sub_slide_section .sub_visual .sub_slide .itm .sub_slide_tit {
+
+    position: absolute;
+    color: #000;
+    font-size: 38rem;
+
+
+    top: 370rem;
+    padding-left: 30rem;
+
+}
+
+
+.sub_visual .arrows {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    max-width: 1800rem;
+    width: 100%;
+}
+
+.sub_visual .arrows i {
+    padding: 25rem;
+
+    border-radius: 50%;
+    color: #fff;
+    font-size: 60rem;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sub_visual .arrows .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.sub_visual .arrows .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/*time*/
+
+.time_section {
+    position: relative;
+}
+
+.time_section .count {
+    max-width: 1400rem;
+    margin: 0 auto;
+    padding: 0 15rem;
+}
+
+.time_section .count .ani .itm {
+    max-width: 106.6%;
+}
+
+.time_section .count .ani {
+    position: relative;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30rem;
+
+
+}
+
+
+.time_section .count .ani .itm {
+    max-width: 1400rem;
+}
+
+.time_section .count .sub_tit h2 {
+    font-size: 40rem;
+    font-weight: 500;
+    padding-bottom: 16rem;
+}
+
+.ani .itm {
+    flex: 0 1 25%;
+    padding: 12rem 20rem 50rem;
+    text-align: center;
+    border-right: 1rem solid #e6eaee;
+}
+
+
+.ani .itm:last-child {
+    border-right: 0;
+}
+
+
+
+
+.ani .img_area {
+    position: relative;
+    margin-top: 35rem;
+}
+
+
+
+.ani .fnt {
+
+    font-size: 50rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    letter-spacing: -0.03em;
+    margin-bottom: 5%;
+
+}
+
+
+/*compnany*/
+
+
+.company_section {
+    position: relative;
+}
+
+.company_section .company_slide .itm img {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu_list_wrap {
+    position: relative;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.company_section .menu_poisiton {
+    position: absolute;
+    left: 50rem;
+}
+
+
+
+
+.company_section .title {}
+
+.company_section .title h2 {
+    font-size: 40rem;
+    color: #222;
+    letter-spacing: -0.35rem;
+    font-weight: 700;
+    margin-bottom: 70rem;
+    vertical-align: top;
+    line-height: 40rem;
+
+
+
+
+}
+
+
+.company_section .company_txt {
+
+    overflow: hidden;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+
+
+
+    padding: 0 20.5%;
+    position: absolute;
+    top: 34%;
+
+    right: 0;
+    transform: translate(0, -50%)
+}
+
+
+
+.menu_list {
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+
+}
+
+.menu_list li {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    height: 64rem;
+
+}
+
+.menu_list li a {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: #161616;
+    font-size: 20rem;
+    font-weight: 700;
+    letter-spacing: -0.5rem;
+}
+
+
+
+.menu_list li a .bi {
+    position: absolute;
+    top: 0rem;
+    right: 50rem;
+    color: #161616;
+
+}
+
+.menu_list li:before {
+    position: absolute;
+    bottom: 20rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: #d0d0d0;
+    content: "";
+
+}
+
+
+.menu_list li:hover:before {
+    background-color: #0055a6
+}
+
+.menu_list li:hover a {
+    color: #0055a6;
+}
+
+.menu_list li:hover a .bi {
+    color: #0055a6
+}
+
+/*블루메인메뉴*/
+.under_menu_list {
+    position: absolute;
+    background-color: #1964d7;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    height: 500rem;
+
+}
+
+.under_title h2 {
+    position: absolute;
+    left: 50rem;
+    font-size: 40rem;
+    color: #fff;
+    letter-spacing: -0.35rem;
+    font-weight: 700;
+    padding-top: 70rem;
+    margin-bottom: 70rem;
+    vertical-align: top;
+    line-height: 40rem;
+}
+
+
+.under_menu_list .menu_list {
+    position: absolute;
+
+
+    top: 84%;
+    left: 52rem;
+    right: 0;
+    transform: translate(0, -50%)
+}
+
+.under_menu_list .menu_list li a .bi {
+    position: absolute;
+    top: 0rem;
+    right: 100rem;
+    color: #161616;
+
+}
