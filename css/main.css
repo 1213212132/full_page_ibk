@@ -557,13 +557,18 @@ body {
     top: 84%;
     left: 52rem;
     right: 0;
-    transform: translate(0, -50%)
+    transform: translate(0, -50%);
+
+}
+
+.under_menu_list .menu_list li a {
+    color: #fff;
 }
 
 .under_menu_list .menu_list li a .bi {
     position: absolute;
     top: 0rem;
     right: 100rem;
-    color: #161616;
+    color: #fff;
 
 }
