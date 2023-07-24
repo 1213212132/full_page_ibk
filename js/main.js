@@ -8,11 +8,40 @@ $(function () {
 
 
     $(".main_content").fullpage({
-        navigation: true,//네비게이션 유무
-        navigationPosition: "right",//네비게이션 위치
+        anchors: ['main', 'sub01', 'sub02', 'sub03', 'sub04',],
+        // navigation: true,//네비게이션 유무
+        // navigationPosition: "right",//네비게이션 위치
 
-        navigationTooltips: ["MAIN", "NEWS", "3번", "4번"],//네비게이션 텍스트, 배열의 형식
-        showActiveTooltip: true//네비게이션 선택 메뉴 활성화
+        // navigationTooltips: ["MAIN", "NEWS", "3번", "4번"],//네비게이션 텍스트, 배열의 형식
+        // showActiveTooltip: true//네비게이션 선택 메뉴 활성화
+
+        //반응형에서 fullpage 안하기.
+        responsiveWidth: 700,
+        //넘치는 부분 스크롤 하기.
+        scrollOverflow: true,
+        //아랜 속도 부분... https://jqueryui.com/easing/ 참고.
+        easing: 'easeOutBounce',
+
+        afterRender: function () {
+            $('.main_content .section').eq(0).addClass('on');
+        },
+        afterLoad: function (lnk, idx) {
+            console.log(lnk, idx);
+            // $('.gnb li').eq(idx - 1).addClass('on').siblings().removeClass('on');
+            $('.main_content .section').eq(idx - 1).addClass('on').siblings().removeClass('on');
+        },
+        onLeave: function (idx, nidx, dir) {
+            $('.archor li').eq(nidx - 1).addClass('on').siblings().removeClass('on');
+            console.log(idx, nidx, dir);
+
+            if (dir == 'up') {
+                $('.header').addClass('on')
+            } else {
+                $('.header').removeClass('on')
+            }
+
+        }
+
     });
 
     $('.main_slide').slick({
@@ -72,10 +101,20 @@ $(function () {
         arrows: false,
         fade: true,
         dots: false,
-        // autoplay: true,
-        // autoplaySpeed: 1000,
+        autoplay: true,
+        autoplaySpeed: 1000,
         pauseOnHover: true,
     });
+
+
+
+    $('.family').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
+    })
+
+
+
 
 })
 

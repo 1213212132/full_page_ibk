@@ -1,10 +1,90 @@
 body {
     overflow-x: hidden;
+    font-family: 'Noto Sans KR';
 }
 
 /* * {
     outline: 1rem solid red;
 } */
+
+
+
+
+
+.archor {
+    position: fixed;
+    top: 41%;
+    right: 50rem;
+    /* transform: translate(0, -50%); */
+    z-index: 999;
+}
+
+.archor li a {
+    position: relative;
+    display: block;
+    width: 100rem;
+    height: 50rem;
+}
+
+.archor li a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.archor li.on a span {
+    display: block;
+    transform: translate(-100%, 0);
+}
+
+.archor li a::after {
+    content: "";
+    position: absolute;
+    top: 46%;
+    right: 18%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50rem;
+    background: #333;
+    transition: width 0.3s;
+}
+
+.archor li.on a::after {
+    width: 5rem;
+}
+
+/*바깥원*/
+
+
+.archor li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 10rem;
+    border: 1rem solid #000;
+    border-radius: 50%;
+    transition: 0.5s linear;
+    opacity: 0;
+}
+
+
+.archor li a:hover::before {
+    opacity: 1;
+    width: 30rem;
+    height: 30rem;
+}
+
+.archor li.on a::before {
+    opacity: 1;
+    width: 30rem;
+    height: 30rem;
+}
+
+
 
 .header {
     position: fixed;
@@ -102,7 +182,7 @@ body {
 }
 
 .main_visual .main_slide .itm img {
-
+    width: 100%;
     height: 100vh;
 
 }
@@ -215,12 +295,13 @@ body {
 }
 
 
-.sub_tit {
+
+.sub_slide_section .sub_tit {
     position: relative;
 
     text-align: center;
 
-    bottom: 100rem;
+    bottom: 150rem;
 }
 
 
@@ -320,6 +401,15 @@ body {
     position: relative;
 }
 
+.time_section .sub_tit {
+    position: relative;
+
+    text-align: center;
+
+    bottom: 120rem;
+}
+
+
 .time_section .count {
     max-width: 1400rem;
     margin: 0 auto;
@@ -336,7 +426,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30rem;
-
+    bottom: -20rem;
 
 }
 
@@ -366,12 +456,19 @@ body {
 
 
 
-.ani .img_area {
-    position: relative;
-    margin-top: 35rem;
+.ani .icon_area {
+    padding-bottom: 13rem;
 }
 
+.ani .data_area {
+    padding-bottom: 13rem;
+}
 
+.ani .data_area span {
+    font-size: 18rem;
+
+
+}
 
 .ani .fnt {
 
@@ -384,6 +481,57 @@ body {
 
 }
 
+
+.time_section .img_box {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    bottom: -120rem;
+
+
+}
+
+.time_section .img_box img {
+    position: relative;
+
+    display: block;
+    width: 100%;
+    height: 200rem;
+}
+
+
+
+.time_section .img_box .slogan {
+    position: absolute;
+
+    display: block;
+    color: #fff;
+    bottom: 50rem;
+    padding-left: 35rem;
+}
+
+.time_section .img_box .slogan h2 {
+
+
+    display: block;
+    font-weight: 600;
+    font-size: 32rem;
+    padding: 10rem 0;
+}
+
+.time_section .img_box .slogan span {
+
+    line-height: 1.5;
+    font-size: 16rem;
+    margin-top: 17rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.time_section .img_box:before:hover {}
 
 /*compnany*/
 
@@ -400,13 +548,43 @@ body {
 
 
 
+.company_section .company_slide .itm .slogan {
+    position: absolute;
+    bottom: 95rem;
+    left: 650rem;
+    margin: 0 -1.5rem;
+    color: #fff;
+    direction: rtl;
+
+}
 
 
 
 
+.company_section .company_slide .itm .slogan span {
+
+    display: block;
+    padding: 5rem 0;
+    font-size: 26rem;
+    font-weight: 400;
 
 
+}
 
+.company_section .company_slide .itm .slogan h2 {
+    display: block;
+    padding: 10rem 0;
+    font-size: 46rem;
+    font-weight: 700;
+}
+
+.company_section .company_slide .itm .slogan p {
+    font-weight: 200;
+    letter-spacing: -0.5rem;
+    font-size: 16.3rem;
+    padding: 1rem 0;
+    line-height: 1.4;
+}
 
 
 
@@ -432,7 +610,7 @@ body {
     color: #222;
     letter-spacing: -0.35rem;
     font-weight: 700;
-    margin-bottom: 70rem;
+    margin-bottom: 40rem;
     vertical-align: top;
     line-height: 40rem;
 
@@ -532,7 +710,7 @@ body {
     width: 50%;
     right: 0;
     bottom: 0;
-    height: 500rem;
+    height: 482rem;
 
 }
 
@@ -543,8 +721,8 @@ body {
     color: #fff;
     letter-spacing: -0.35rem;
     font-weight: 700;
-    padding-top: 70rem;
-    margin-bottom: 70rem;
+    padding-top: 75rem;
+
     vertical-align: top;
     line-height: 40rem;
 }
@@ -571,4 +749,285 @@ body {
     right: 100rem;
     color: #fff;
 
+}
+
+/*people*/
+
+.people_section {
+    position: relative;
+}
+
+.people_section .left_box img {}
+
+.people_section .inner_2 {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30rem;
+
+}
+
+
+
+.people_section .inner_2 .right_box::before {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 40%;
+    height: 100%;
+    background-color: #f1f6fe;
+    content: "";
+    z-index: -1;
+}
+
+.people_section .inner_2 .right_box .slogan {
+
+    position: absolute;
+    right: 300rem;
+    white-space: nowrap;
+
+}
+
+
+
+
+.people_section .inner_2 .right_box .slogan {
+    color: #000;
+    font-size: 31rem;
+}
+
+.people_section .inner_2 .right_box .slogan h2 {
+    padding-bottom: 10rem;
+}
+
+
+.people_section .inner_2 .right_box .slogan h3 {
+    font-weight: 500;
+}
+
+
+
+.people_section .inner_2 .right_box ul {
+    position: absolute;
+
+    right: 470rem;
+    top: 480rem;
+    display: table;
+    width: 10%;
+    height: 100%;
+    table-layout: fixed;
+}
+
+.people_section .inner_2 .right_box ul li {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    height: 64rem;
+
+}
+
+.people_section .inner_2 .right_box ul li a {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: #161616;
+    font-size: 20rem;
+    font-weight: 300;
+    letter-spacing: -0.5rem;
+}
+
+.people_section .inner_2 .right_box ul li a i {
+    position: absolute;
+
+    color: #161616;
+    right: 1rem;
+
+}
+
+.people_section .inner_2 .right_box ul li:before {
+    position: absolute;
+    bottom: 20rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: #d0d0d0;
+    content: "";
+
+}
+
+
+.people_section .inner_2 .right_box ul li:hover:before {
+    background-color: #0055a6
+}
+
+.people_section .inner_2 .right_box ul li:hover a {
+    color: #0055a6;
+}
+
+.people_section .inner_2 .right_box ul li:hover a i {
+    color: #0055a6
+}
+
+
+/*footer*/
+.footer {
+
+
+
+    background: #666;
+
+}
+
+.footer .inner_2 {
+    height: 200rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.footer .inner_2 .logo a img {
+    padding-bottom: 38rem;
+}
+
+
+.footer .inner_2 .feedback {
+    display: flex;
+    gap: 30rem;
+    padding: 0 610rem 0 0;
+}
+
+.footer .inner_2 .feedback {
+    padding-bottom: 10rem;
+}
+
+.footer .inner_2 .feedback li a {
+
+
+    gap: 30rem;
+    color: #fff;
+    font-size: 15rem;
+}
+
+.footer .inner_2 .address {
+    padding-bottom: 10rem;
+}
+
+.footer .inner_2 .address span {
+
+    font-size: 15rem;
+    color: #fff;
+
+
+}
+
+.footer .inner_2 .call ul {
+    display: flex;
+    gap: 20rem;
+    color: #fff;
+    padding-bottom: 10rem;
+    font-size: 15rem;
+}
+
+.footer .inner_2 .copy {
+    font-size: 15rem;
+    color: #999;
+}
+
+
+/*family 링크*/
+
+.family {
+
+    position: relative;
+
+    width: 200px;
+
+    height: 28px;
+    padding: 5rem 0 0 10rem;
+    border: 1px solid #eee;
+    z-index: 100;
+
+
+}
+
+.family .btn_select_family {
+    display: block;
+
+    position: relative;
+
+    width: 100rem;
+    height: 1rem;
+    font-size: 14rem;
+    font-weight: 700;
+    color: #fefefe;
+    text-align: left;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+
+
+}
+
+.family .btn_select_family>.icon {
+    font-size: 12rem;
+}
+
+.family>.family_list {
+    position: absolute;
+    width: 200rem;
+    bottom: 26rem;
+    left: -1rem;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: #666;
+    border: 1px solid #fff;
+
+    box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.05);
+    transition: visibility .25s ease, opacity .25s ease;
+    z-index: 11;
+
+}
+
+
+.family>.family_list>li {
+    text-align: left;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+
+}
+
+.family>.family_list>li:last-child {
+    border-bottom: 0;
+}
+
+
+
+
+.family>.family_list>li>a {
+    display: block;
+    font-size: 13rem;
+    color: #fff;
+    padding: 5rem 0 5rem 10rem;
+
+
+}
+
+.family>.family_list>li>a:hover {
+    background: #999
+}
+
+
+.family.on>.btn_select_family>.icon::before {
+    content: "\e930"
+}
+
+.family.on>.family_list {
+
+    visibility: visible;
+    opacity: 1;
 }
