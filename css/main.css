@@ -1,13 +1,13 @@
 body {
     overflow-x: hidden;
-    font-family: 'Noto Sans KR';
+    font-family: 'GmarketSansMedium';
 }
 
 /* * {
     outline: 1rem solid red;
-} */
+}
 
-
+ */
 
 
 
@@ -144,8 +144,15 @@ body {
     font-size: 18rem;
     gap: 20rem;
     color: #222;
-    padding-right: 36rem;
+    margin: 0 0 0 300rem;
 
+
+}
+
+
+.header .sub_page {
+    font-size: 15px;
+    color: #fff;
 }
 
 .header .gnb>ul>a {
@@ -153,16 +160,17 @@ body {
     font-size: 16rem;
     white-space: nowrap;
 
+
 }
 
-.header .gnb .menu_txt {
+.header .gnb .menu_txt li>.gnb_tit {
     color: #fff;
 }
 
 .header .gnb>ul>li {
 
 
-    position: relative;
+
     white-space: nowrap;
     word-break: keep-all;
     margin-right: 5%;
@@ -170,6 +178,138 @@ body {
 
 
 
+
+.header .gnb>ul>li .sub {
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top: 105rem;
+    left: 0;
+
+    z-index: 999;
+    white-space: nowrap;
+
+    width: 100%;
+    line-height: 40rem;
+
+    transition: 0.5s;
+
+
+
+}
+
+.header .gnb>ul>li:hover .sub {
+    background: white;
+    height: 400rem;
+
+}
+
+.header .gnb>ul>li .sub .tit {
+    position: relative;
+    right: -360rem;
+    bottom: -135rem;
+    color: #0055a6;
+    font-size: 38px;
+    letter-spacing: -0.25px;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.header .gnb>ul>li .sub img {
+    position: relative;
+    right: -360rem;
+    bottom: -140rem;
+    width: 34%;
+}
+
+.header .gnb>ul>li ul {}
+
+.header .gnb>ul>li .sub .right {
+    position: relative;
+
+
+    right: -1180rem;
+    bottom: 92rem;
+
+    width: 5%;
+    height: 64rem;
+
+}
+
+
+
+
+
+.header .gnb>ul>li .sub .right2 {
+    position: relative;
+
+    width: 8%;
+    right: -1280rem;
+    bottom: 349rem;
+
+    height: 64rem;
+
+}
+
+
+.header .gnb>ul>li .sub .right3 {
+    position: relative;
+
+    width: 8%;
+    right: -1390rem;
+    bottom: 605rem;
+
+    height: 64rem;
+
+}
+
+.header .sub>ul>li>a {}
+
+.mobile_btn {
+    display: none;
+}
+
+/* 새로만들어보기 모바일 메뉴 */
+
+.header .re_gnb {
+    display: none;
+}
+
+.header .re_gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .re_gnb>ul>li>a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+.header .re_gnb>ul>li .snb {
+    position: absolute;
+    top: 100px;
+    left: -40px;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 10px 40px 30px 40px;
+
+    display: none;
+}
+
+.header .re_gnb>ul>li:hover .snb {
+    display: block;
+}
+
+.header .re_gnb>ul>li .snb a {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+}
 
 
 
@@ -200,10 +340,12 @@ body {
 .main_visual .main_slide .itm figure .slogan h2 {
     font-size: 60rem;
     padding-bottom: 9rem;
+    font-weight: 500;
 }
 
 .main_visual .main_slide .itm figure .slogan span {
     font-size: 27rem;
+    font-weight: 300;
 }
 
 .main_visual .slick-dots {
@@ -285,6 +427,513 @@ body {
     top: 0;
 }
 
+
+
+
+@media (max-width : 768px) {
+
+    .wrap {
+        overflow: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+        font-family: 'GmarketSansMedium';
+    }
+
+    .archor {
+        position: fixed;
+        top: 41%;
+        right: 50rem;
+        /* transform: translate(0, -50%); */
+        z-index: 999;
+    }
+
+    .archor li a {
+        position: relative;
+        display: block;
+        width: 100rem;
+        height: 50rem;
+    }
+
+    .archor li a span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .archor li.on a span {
+        display: block;
+        transform: translate(-100%, 0);
+    }
+
+    .archor li a::after {
+        content: "";
+        position: absolute;
+        top: 46%;
+        right: 18%;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50rem;
+        background: #333;
+        transition: width 0.3s;
+    }
+
+    .archor li.on a::after {
+        width: 5rem;
+    }
+
+    /*바깥원*/
+
+
+    .archor li a::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        width: 10rem;
+        height: 10rem;
+        border: 1rem solid #000;
+        border-radius: 50%;
+        transition: 0.5s linear;
+        opacity: 0;
+    }
+
+
+    .archor li a:hover::before {
+        opacity: 1;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .archor li.on a::before {
+        opacity: 1;
+        width: 30rem;
+        height: 30rem;
+    }
+
+
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+
+
+
+    }
+
+
+    .header .on .inner {
+        background: #fff;
+    }
+
+
+    .header a {
+        display: block;
+    }
+
+    .header .inner {
+
+        height: 110rem;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .header .logo {
+
+        display: block;
+        width: 190rem;
+        height: 44rem;
+        background: url(../img/header_logo.png) no-repeat;
+
+    }
+
+
+
+    .header h1 {
+        /* r */
+        position: fixed;
+        z-index: 1000;
+        padding: 0 0 0 15px;
+    }
+
+    .header .gnb {
+
+
+        display: inline-block;
+
+        display: none;
+
+        transition: none;
+    }
+
+
+
+    .header .gnb>ul {
+
+
+
+        font-family: 'GmarketSansMedium';
+        display: flex;
+        font-size: 18rem;
+        gap: 20rem;
+        color: #222;
+        padding-right: 36rem;
+
+    }
+
+    .header .gnb>ul>a {
+
+        font-size: 16rem;
+        white-space: nowrap;
+
+
+    }
+
+    .header .gnb .menu_txt li>.gnb_tit {
+        color: #fff;
+    }
+
+    .header .gnb>ul>li {
+
+
+
+        white-space: nowrap;
+        word-break: keep-all;
+        margin-right: 5%;
+    }
+
+
+
+
+    .header .gnb>ul>li .sub {
+        height: 0;
+        overflow: hidden;
+
+        position: absolute;
+        top: 105rem;
+        left: 0;
+
+        z-index: 999;
+        white-space: nowrap;
+
+        width: 100%;
+        line-height: 40rem;
+
+        transition: 0.5s;
+
+        /*r*/
+        display: none;
+
+    }
+
+    .header .gnb>ul>li:hover .sub {
+        background: white;
+        height: 400rem;
+
+
+    }
+
+    .header .gnb>ul>li .sub .tit {
+        position: relative;
+        right: -360rem;
+        bottom: -135rem;
+        color: #0055a6;
+        font-size: 38px;
+        letter-spacing: -0.25px;
+        margin-bottom: 14px;
+        font-weight: 700;
+    }
+
+    .header .gnb>ul>li .sub img {
+        position: relative;
+        right: -360rem;
+        bottom: -140rem;
+        width: 34%;
+    }
+
+    .header .gnb>ul>li ul {}
+
+    .header .gnb>ul>li .sub .right {
+        position: relative;
+
+
+        right: -1180rem;
+        bottom: 92rem;
+
+        width: 5%;
+        height: 64rem;
+
+    }
+
+
+
+
+
+    .header .gnb>ul>li .sub .right2 {
+        position: relative;
+
+        width: 8%;
+        right: -1280rem;
+        bottom: 349rem;
+
+        height: 64rem;
+
+    }
+
+
+    .header .gnb>ul>li .sub .right3 {
+        position: relative;
+
+        width: 8%;
+        right: -1390rem;
+        bottom: 605rem;
+
+        height: 64rem;
+
+    }
+
+    .header .sub>ul>li>a {}
+
+
+    /* 새로만들어보기 모바일 메뉴 */
+
+    .header .re_gnb {
+        display: block;
+    }
+
+    .header .re_gnb>ul {
+        display: flex;
+        gap: 40px;
+
+        /* r */
+        flex-direction: column;
+        gap: 0;
+        padding: 150px 30px 0 30px;
+    }
+
+    .header .re_gnb>ul>li>a {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+
+        /* r */
+        border-bottom: 1px solid #666;
+    }
+
+    .header .re_gnb {
+        /* r */
+        position: fixed;
+        inset: 0 auto 0 100%;
+        background: #444;
+        bottom: 505px;
+        width: 100%;
+
+        transition: 0.5s;
+    }
+
+    .header .re_gnb.on {
+        /* r */
+        inset: 0 auto 0 0;
+    }
+
+    .header .re_gnb>ul>li {
+        position: relative;
+        line-height: 100px;
+        /* r */
+        line-height: 40px;
+    }
+
+    .header .re_gnb>ul>li .snb {
+        position: absolute;
+        top: 100px;
+        left: -40px;
+        white-space: nowrap;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 10px 40px 30px 40px;
+
+        display: none;
+
+
+        /* r */
+        position: static;
+        background: rgba(0, 0, 0, 1);
+        padding: 0 0 0 0;
+    }
+
+
+
+    .header .re_gnb>ul>li:hover .snb {
+        display: block;
+
+        /* r */
+        display: none;
+    }
+
+    .header .re_gnb>ul>li .snb a {
+        display: block;
+        color: #fff;
+        font-size: 15px;
+        line-height: 30px;
+
+        /* r */
+        padding: 0 0 0 15px;
+    }
+
+    /* r */
+    .mobile_btn {
+        /* r */
+        display: block;
+
+        position: fixed;
+        inset: 30px 30px auto auto;
+        z-index: 1000;
+        width: 30px;
+        height: 30px;
+        background: #ddd;
+        border-radius: 5px;
+    }
+
+
+
+    /**/
+
+
+    .main_visual {
+        position: relative;
+
+    }
+
+    .main_visual .main_slide .itm img {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .main_visual .main_slide .itm figure .slogan {
+        position: absolute;
+        top: 36%;
+        z-index: 999;
+        color: #fff;
+
+        line-height: 1.4;
+    }
+
+
+    .main_visual .main_slide .itm figure .slogan h2 {
+        font-size: 60rem;
+        padding-bottom: 9rem;
+        font-weight: 500;
+    }
+
+    .main_visual .main_slide .itm figure .slogan span {
+        font-size: 27rem;
+        font-weight: 300;
+    }
+
+    .main_visual .slick-dots {
+        position: absolute;
+        bottom: 50rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 999;
+    }
+
+    .main_visual .slick-dots>li {
+        display: inline-block;
+        padding: 5rem 0;
+        cursor: pointer;
+    }
+
+    .main_visual .slick-dots>li button {
+        position: relative;
+        width: 80rem;
+        height: 4rem;
+        background: #ddd;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin: 0 2rem;
+
+        border: none;
+        outline: none;
+        font-size: 0;
+    }
+
+    .main_visual .slick-dots>li button::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #999;
+
+    }
+
+    .main_visual .slick-dots>li.slick-active button::after {
+        width: 100%;
+        transition: 3s;
+    }
+
+    .main_visual .arrows {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+
+        max-width: 1700rem;
+        width: 100%;
+    }
+
+    .main_visual .arrows i {
+        padding: 25rem;
+
+        border-radius: 50%;
+        color: #fff;
+        font-size: 60rem;
+
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .main_visual .arrows .left {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+
+    .main_visual .arrows .right {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*sub_slide*/
 
 
@@ -350,11 +999,12 @@ body {
 
     position: absolute;
     color: #000;
-    font-size: 38rem;
+    font-size: 30rem;
 
 
     top: 370rem;
-    padding-left: 30rem;
+    font-weight: 500;
+    padding-left: 35rem;
 
 }
 
@@ -665,7 +1315,7 @@ body {
     height: 100%;
     color: #161616;
     font-size: 20rem;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: -0.5rem;
 }
 
@@ -741,6 +1391,7 @@ body {
 
 .under_menu_list .menu_list li a {
     color: #fff;
+    font-weight: 300;
 }
 
 .under_menu_list .menu_list li a .bi {
@@ -944,11 +1595,11 @@ body {
 
     position: relative;
 
-    width: 200px;
+    width: 200rem;
 
-    height: 28px;
+    height: 28rem;
     padding: 5rem 0 0 10rem;
-    border: 1px solid #eee;
+    border: 1rem solid #eee;
     z-index: 100;
 
 
@@ -985,7 +1636,7 @@ body {
     visibility: hidden;
     opacity: 0;
     background: #666;
-    border: 1px solid #fff;
+    border: 1rem solid #fff;
 
     box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.05);
     transition: visibility .25s ease, opacity .25s ease;

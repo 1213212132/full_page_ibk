@@ -114,6 +114,34 @@ $(function () {
     })
 
 
+    $('.mobile_btn').on('click', function () {
+        $(this).toggleClass('on');
+        $('.re_gnb').toggleClass('on');
+    });
+
+    $('.re_gnb li>a').on('click', function (e) {
+        if ($('.re_gnb').hasClass('on')) {
+
+            //서버메뉴가 없으면 바로 클릭되게 하기
+            if ($(this).next().size() != 0) {
+                e.preventDefault();
+            }
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.snb').stop().slideUp();
+        }
+    });
+
+    $(window).on('resize', function () {
+        $('.re_gnb').removeClass('on')
+    });
+
+    $('.re_gnb').on('wheel', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+        }
+    })
+
+
 
 
 })
