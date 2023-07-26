@@ -861,7 +861,7 @@ body {
     .main_visual {
         position: relative;
 
-        top: -200rem;
+
 
 
     }
@@ -1132,12 +1132,12 @@ body {
     .sub_slide_section {
         position: relative;
 
-        bottom: 250rem;
+
     }
 
 
     .sub_slide_section .sub_visual {
-        height: 75vh;
+        height: 100vh;
         background: url(../img/main_t01_s02.jpg)no-repeat;
     }
 
@@ -1147,7 +1147,7 @@ body {
 
         text-align: center;
 
-        bottom: -90rem;
+
     }
 
 
@@ -1417,15 +1417,15 @@ body {
 
     .time_section {
         position: relative;
-        bottom: 150rem;
+
     }
 
     .time_section .sub_tit {
         position: relative;
 
         text-align: center;
+        top: 60rem;
 
-        bottom: 100rem;
     }
 
 
@@ -1445,7 +1445,9 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30rem;
-        bottom: 50rem;
+        /*r*/
+
+        top: 130rem;
 
     }
 
@@ -1899,6 +1901,7 @@ body {
         position: absolute;
         left: 50rem;
 
+        bottom: 40rem;
 
     }
 
@@ -1943,7 +1946,7 @@ body {
         overflow: visible;
         position: absolute;
         left: 0rem;
-        top: 30%;
+        top: 400rem;
         width: 100%;
         padding: 10rem;
 
@@ -2049,7 +2052,7 @@ body {
         line-height: 40rem;
 
         /*r*/
-        top: -200rem;
+        top: -70rem;
         color: #000;
         line-height: 0rem;
         font-size: 20rem;
@@ -2060,13 +2063,12 @@ body {
         position: absolute;
 
 
-        top: 23%;
+        top: 60%;
         left: 52rem;
         right: 0;
 
 
         /*r*/
-
 
 
     }
