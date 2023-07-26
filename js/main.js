@@ -20,7 +20,6 @@ $(function () {
         //넘치는 부분 스크롤 하기.
         scrollOverflow: true,
         //아랜 속도 부분... https://jqueryui.com/easing/ 참고.
-        easing: 'easeOutBounce',
 
         afterRender: function () {
             $('.main_content .section').eq(0).addClass('on');
@@ -70,6 +69,24 @@ $(function () {
         arrows: false,
 
         dots: false,
+
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 960, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            }
+        ]
+
     });
 
 
@@ -79,6 +96,12 @@ $(function () {
     $('.sub_visual .arrows .right').on('click', function () {
         $('.sub_slide').slick('slickNext');
     });
+
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        sct > 0 ? $('.fnt').addClass('on') : $('.fnt').removeClass('on');
+    })
 
 
 
@@ -102,8 +125,24 @@ $(function () {
         fade: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         pauseOnHover: true,
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 960, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 
