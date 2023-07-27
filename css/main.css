@@ -1512,7 +1512,7 @@ body {
 
         padding-bottom: 12rem;
 
-
+        /*r*/
     }
 
     .time_section .img_box img {
@@ -1924,6 +1924,7 @@ body {
 
 
 
+
     }
 
 
@@ -2058,6 +2059,7 @@ body {
         /*r*/
         top: -140rem;
         color: #000;
+        left: 12rem;
         line-height: 0rem;
         font-size: 20rem;
     }
@@ -2068,7 +2070,7 @@ body {
 
 
         top: 130rem;
-        left: 52rem;
+        left: 12rem;
         right: 0;
 
 
@@ -2263,31 +2265,33 @@ body {
         right: -40rem;
         white-space: nowrap;
 
-        position: absolute;
-        bottom: 500rem;
-        right: 70rem;
+        position: relative;
+        bottom: 650rem;
 
-        /*r*/
-        display: none;
+        right: 0rem;
+        bottom: -40rem;
+        color: #fff;
+        font-size: 22rem;
+        left: 11rem;
+
     }
 
 
 
 
 
-
-    .people_section .inner_2 .right_box .slogan {
-        color: #000;
-        font-size: 20rem;
-    }
 
     .people_section .inner_2 .right_box .slogan h2 {
         padding-bottom: 10rem;
+        font-weight: 100;
+
     }
 
 
     .people_section .inner_2 .right_box .slogan h3 {
         font-weight: 500;
+
+
     }
 
 
@@ -2303,8 +2307,8 @@ body {
         table-layout: fixed;
 
         /*ㄱ*/
-        left: 50rem;
-        top: 10rem
+        left: 12rem;
+        top: -100rem;
     }
 
     .people_section .inner_2 .right_box ul li {
