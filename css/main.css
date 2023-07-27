@@ -187,7 +187,7 @@ body {
     width: 100%;
     line-height: 40rem;
 
-    transition: 0.5s;
+
 
 
 
@@ -196,7 +196,7 @@ body {
 .header .gnb>ul>li:hover .sub {
     background: white;
     height: 400rem;
-
+    transition: 0.5s;
 }
 
 .header .gnb>ul>li .sub .tit {
@@ -721,6 +721,9 @@ body {
         padding: 150px 30px 0 30px;
     }
 
+
+    .header .re_gnb>ul>li {}
+
     .header .re_gnb>ul>li>a {
         display: block;
         font-size: 20px;
@@ -750,7 +753,7 @@ body {
         position: relative;
         line-height: 100px;
         /* r */
-        line-height: 70rem;
+        line-height: 50rem;
     }
 
     .header .re_gnb>ul>li .snb {
@@ -766,8 +769,8 @@ body {
 
         /* r */
         position: static;
-        background: rgba(0, 0, 0, 1);
-        padding: 0 0 0 0;
+        background: #666;
+        padding: 0 0 0 10rem;
     }
 
 
@@ -783,7 +786,7 @@ body {
         display: block;
         color: #fff;
         font-size: 15px;
-        line-height: 30px;
+        line-height: 50px;
 
         /* r */
         padding: 0 0 0 15px;
@@ -854,137 +857,137 @@ body {
         display: none;
     }
 
+}
+
+/**/
 
 
-    /**/
-
-
-    .main_visual {
-        position: relative;
+.main_visual {
+    position: relative;
 
 
 
 
-    }
+}
 
-    .main_visual .main_slide .itm img {
-        position: relative;
-        width: 100%;
+.main_visual .main_slide .itm img {
+    position: relative;
+    width: 100%;
 
-        height: 100vh;
+    height: 100vh;
 
-    }
+}
 
-    .main_visual .main_slide .itm01 {}
+.main_visual .main_slide .itm01 {}
 
-    .main_visual .main_slide .itm figure .slogan {
-        position: absolute;
-        top: 50%;
-        z-index: 999;
-        color: #fff;
-        transform: translate(13%, 10%);
+.main_visual .main_slide .itm figure .slogan {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    color: #fff;
+    transform: translate(13%, 10%);
 
-        line-height: 1.4;
-    }
-
-
-    .main_visual .main_slide .itm figure .slogan h2 {
-        font-size: 25rem;
-        padding-bottom: 9rem;
-        font-weight: 500;
-    }
-
-    .main_visual .main_slide .itm figure .slogan span {
-        font-size: 15rem;
-        font-weight: 300;
-    }
-
-    .main_visual .slick-dots {
-        position: absolute;
-        bottom: 50rem;
-        left: 50%;
-        transform: translate(-50%, 0);
-        z-index: 999;
-
-        /*r*/
-        display: none;
-    }
-
-    .main_visual .slick-dots>li {
-        display: inline-block;
-        padding: 5rem 0;
-        cursor: pointer;
-        /*r*/
-        display: none;
-    }
-
-    .main_visual .slick-dots>li button {
-        position: relative;
-        width: 80rem;
-        height: 4rem;
-        background: #ddd;
-        border-radius: 2rem;
-        overflow: hidden;
-        margin: 0 2rem;
-
-        border: none;
-        outline: none;
-        font-size: 0;
-    }
-
-    .main_visual .slick-dots>li button::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: #999;
-
-    }
-
-    .main_visual .slick-dots>li.slick-active button::after {
-        width: 100%;
-        transition: 3s;
-    }
-
-    .main_visual .arrows {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-
-        max-width: 1700rem;
-        width: 100%;
-
-        /*r*/
-        display: none;
-    }
-
-    .main_visual .arrows i {
-        padding: 25rem;
-
-        border-radius: 50%;
-        color: #fff;
-        font-size: 60rem;
-
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-    .main_visual .arrows .left {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+    line-height: 1.4;
+}
 
 
-    .main_visual .arrows .right {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+.main_visual .main_slide .itm figure .slogan h2 {
+    font-size: 25rem;
+    padding-bottom: 9rem;
+    font-weight: 500;
+}
+
+.main_visual .main_slide .itm figure .slogan span {
+    font-size: 15rem;
+    font-weight: 300;
+}
+
+.main_visual .slick-dots {
+    position: absolute;
+    bottom: 50rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+
+    /*r*/
+    display: none;
+}
+
+.main_visual .slick-dots>li {
+    display: inline-block;
+    padding: 5rem 0;
+    cursor: pointer;
+    /*r*/
+    display: none;
+}
+
+.main_visual .slick-dots>li button {
+    position: relative;
+    width: 80rem;
+    height: 4rem;
+    background: #ddd;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0 2rem;
+
+    border: none;
+    outline: none;
+    font-size: 0;
+}
+
+.main_visual .slick-dots>li button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #999;
+
+}
+
+.main_visual .slick-dots>li.slick-active button::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.main_visual .arrows {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    max-width: 1700rem;
+    width: 100%;
+
+    /*r*/
+    display: none;
+}
+
+.main_visual .arrows i {
+    padding: 25rem;
+
+    border-radius: 50%;
+    color: #fff;
+    font-size: 60rem;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main_visual .arrows .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.main_visual .arrows .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 
 
@@ -1551,7 +1554,7 @@ body {
         color: #fff;
         bottom: 30rem;
 
-        padding-left: 21rem;
+        padding-left: 35rem;
     }
 
     .time_section .img_box .slogan h2 {
@@ -2152,11 +2155,13 @@ body {
 
 .people_section .inner_2 .right_box .slogan h2 {
     padding-bottom: 10rem;
+    line-height: 1.3;
 }
 
 
 .people_section .inner_2 .right_box .slogan h3 {
     font-weight: 500;
+    line-height: 1.3;
 }
 
 

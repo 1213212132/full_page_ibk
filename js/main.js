@@ -175,7 +175,7 @@ $(function () {
     });
 
     $('.re_gnb').on('wheel', function (e) {
-        if ($('.gnb').hasClass('on')) {
+        if ($('.re_gnb').hasClass('on')) {
             e.preventDefault();
         }
     })
