@@ -1896,6 +1896,7 @@ body {
 
 
 
+
     }
 
     .company_section .menu_poisiton {
@@ -1930,7 +1931,7 @@ body {
 
 
         position: absolute;
-        top: 900rem;
+        top: 500rem;
         left: 0rem;
         width: 50%;
         height: 50%;
@@ -1948,12 +1949,12 @@ body {
         position: absolute;
         left: 0rem;
         padding-top: 20rem;
-        top: 110rem;
+        top: 1rem;
 
         transform: translate(0, 0);
         width: 100%;
 
-
+        display: none;
     }
 
 
@@ -1963,7 +1964,6 @@ body {
         width: 100%;
         height: 100%;
         table-layout: fixed;
-
 
 
 
@@ -2056,7 +2056,7 @@ body {
         line-height: 40rem;
 
         /*r*/
-        top: 80rem;
+        top: -140rem;
         color: #000;
         line-height: 0rem;
         font-size: 20rem;
@@ -2067,7 +2067,7 @@ body {
         position: absolute;
 
 
-        top: 340rem;
+        top: 130rem;
         left: 52rem;
         right: 0;
 
@@ -2230,7 +2230,7 @@ body {
     .people_section .left_box img {
         position: relative;
         width: 100%;
-        bottom: -230rem;
+        bottom: -170rem;
         height: 250rem;
 
     }
@@ -2304,7 +2304,7 @@ body {
 
         /*ㄱ*/
         left: 50rem;
-        top: 200rem
+        top: 10rem
     }
 
     .people_section .inner_2 .right_box ul li {
@@ -2560,10 +2560,8 @@ body {
         gap: 30rem;
         padding: 0 610rem 0 0;
         /*r*/
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0rem;
-        width: 430rem;
+        gap: 10rem;
+        width: 400rem;
         position: relative;
 
         padding: 0;
@@ -2588,13 +2586,13 @@ body {
         /*r*/
         position: relative;
         bottom: 70rem;
-        width: 100%;
-        padding-left: 20rem;
+        width: 84%;
+        padding-right: 10rem;
     }
 
     .footer .inner_2 .address span {
 
-        font-size: 14rem;
+        font-size: 12rem;
         color: #fff;
 
 
@@ -2610,9 +2608,9 @@ body {
         /*r*/
 
         position: relative;
-        font-size: 14rem;
+        font-size: 11rem;
         bottom: 60rem;
-        padding-left: 20rem;
+        padding-right: 10rem;
     }
 
     .footer .inner_2 .copy {
@@ -2622,9 +2620,9 @@ body {
         /*r*/
         position: relative;
         bottom: 40rem;
-        font-size: 14rem;
+        font-size: 10rem;
         width: 80%;
-        padding-left: 20rem;
+        padding-right: 10rem;
     }
 
 
@@ -2641,7 +2639,7 @@ body {
         border: 1rem solid #eee;
         z-index: 100;
 
-        right: 300rem;
+        right: 400rem;
         bottom: -100rem;
     }
 
