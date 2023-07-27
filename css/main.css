@@ -1510,7 +1510,7 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
-
+        padding-bottom: 12rem;
 
 
     }
@@ -1520,7 +1520,8 @@ body {
 
         display: block;
         width: 100%;
-        height: 200rem;
+        height: 210rem;
+
     }
 
 
@@ -1915,7 +1916,7 @@ body {
         color: #222;
         letter-spacing: -0.35rem;
         font-weight: 700;
-        margin-bottom: 40rem;
+        margin-bottom: 20rem;
         vertical-align: top;
         line-height: 40rem;
 
@@ -1927,7 +1928,7 @@ body {
 
     .company_section .company_txt {
 
-        overflow: hidden;
+
         position: absolute;
         top: 900rem;
         left: 0rem;
@@ -1943,12 +1944,15 @@ body {
         transform: translate(0, -50%);
 
         /*r*/
-        overflow: visible;
+
         position: absolute;
         left: 0rem;
-        top: 400rem;
+        padding-top: 20rem;
+        top: 110rem;
+
+        transform: translate(0, 0);
         width: 100%;
-        padding: 10rem;
+
 
     }
 
@@ -2052,7 +2056,7 @@ body {
         line-height: 40rem;
 
         /*r*/
-        top: -70rem;
+        top: 80rem;
         color: #000;
         line-height: 0rem;
         font-size: 20rem;
@@ -2063,7 +2067,7 @@ body {
         position: absolute;
 
 
-        top: 60%;
+        top: 340rem;
         left: 52rem;
         right: 0;
 
@@ -2226,8 +2230,8 @@ body {
     .people_section .left_box img {
         position: relative;
         width: 100%;
-        bottom: -150rem;
-        height: 300rem;
+        bottom: -230rem;
+        height: 250rem;
 
     }
 
@@ -2259,6 +2263,10 @@ body {
         right: -40rem;
         white-space: nowrap;
 
+        position: absolute;
+        bottom: 500rem;
+        right: 70rem;
+
         /*r*/
         display: none;
     }
@@ -2270,7 +2278,7 @@ body {
 
     .people_section .inner_2 .right_box .slogan {
         color: #000;
-        font-size: 25rem;
+        font-size: 20rem;
     }
 
     .people_section .inner_2 .right_box .slogan h2 {
@@ -2295,7 +2303,8 @@ body {
         table-layout: fixed;
 
         /*ㄱ*/
-        left: 40rem;
+        left: 50rem;
+        top: 200rem
     }
 
     .people_section .inner_2 .right_box ul li {
@@ -2322,7 +2331,7 @@ body {
         position: absolute;
 
         color: #161616;
-        right: 1rem;
+        right: 30rem;
 
     }
 
